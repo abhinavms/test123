@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Oracle Analytics Embed Example Using a Token</title>
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <style>
+      .bitech-layout-component {
+        background: black;
+      }
+      body {
+        background-color: black !important;
+      }
+      h1 {
+        color: white !important;
+        margin-left: 40px !important;
+      }
+      .bi_filterbar_padding_left {
+        position: unset !important;
+      }
+    </style>
+    <script
+      src="https://tvm01oacnew-ofscdev-ia.analytics.ocp.oraclecloud.com/public/dv/v1/embedding/standalone/embedding.js"
+      type="application/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <h1>Sales Analytics</h1>
+    <div
+      style="
+        border: 1px solid black;
+        position: absolute;
+        width: calc(100% — 40px);
+        height: calc(100% — 120px);
+      "
+    >
+      <oracle-dv
+        project-path="/@Catalog/shared/Embed/Dark_Theme_Embed"
+        active-page="canvas"
+        active-tab-id="1"
+        project-options='{"bDisableMobileLayout":false, "bShowFilterBar":true}'
+      >
+      </oracle-dv>
+    </div>
+    <script>
+      var idcs_token = "eyJ4NXQjUzI1NiI6InZGcXR6ZU56WWk3QVFCNWdxLS1DN1RNYWlTa3ZETGpnaU5mWnk0QnRnd0EiLCJ4NXQiOiI0c0JISGkxZTNxWUI5SGRtT3BJS3JjV19VN1kiLCJraWQiOiJTSUdOSU5HX0tFWSIsImFsZyI6IlJTMjU2In0.eyJjbGllbnRfb2NpZCI6Im9jaWQxLmRvbWFpbmFwcC5vYzEucGh4LmFtYWFhYWFhYXF0cDViYWFpbnd5d2M1djNmdnE3eHlrcjdreTYzNng1cDQydDMzenNscGl0aG80M3hscSIsInVzZXJfdHoiOiJBbWVyaWNhXC9DaGljYWdvIiwic3ViIjoib2FjX29mcyIsInVzZXJfbG9jYWxlIjoiZW4iLCJzaWRsZSI6NDgwLCJ1c2VyLnRlbmFudC5uYW1lIjoiaWRjcy05YjZkYjI4ZjBmZDg0OTA3YWQ2ZTlkMDk5ODBmNDcwMyIsImlzcyI6Imh0dHBzOlwvXC9pZGVudGl0eS5vcmFjbGVjbG91ZC5jb21cLyIsInVzZXJfdGVuYW50bmFtZSI6ImlkY3MtOWI2ZGIyOGYwZmQ4NDkwN2FkNmU5ZDA5OTgwZjQ3MDMiLCJjbGllbnRfaWQiOiI2MGU2YmEzMDlkOWI0ZDFiYjk4NjA2MDNhM2M1MjA5ZiIsInN1Yl90eXBlIjoidXNlciIsInNjb3BlIjoidXJuOm9wYzpyZXNvdXJjZTpjb25zdW1lcjo6YWxsIiwidXNlcl9vY2lkIjoib2NpZDEudXNlci5vYzEuLmFhYWFhYWFhc3I0d3diNXk1dWRnb2hrYm5mYjd4emo3ZHVhMno1YnZoaHR1ZG12aXBnYjY2dm9rZW1vYSIsImNsaWVudF90ZW5hbnRuYW1lIjoiaWRjcy05YjZkYjI4ZjBmZDg0OTA3YWQ2ZTlkMDk5ODBmNDcwMyIsInJlZ2lvbl9uYW1lIjoidXMtcGhvZW5peC1pZGNzLTIiLCJ1c2VyX2xhbmciOiJlbiIsImV4cCI6MTY4MDYyMTczMSwiaWF0IjoxNjgwNjIxNjMxLCJjbGllbnRfZ3VpZCI6ImExZTRiZWY3NDNkZDRhNWVhN2U0ZDE3MzE2NzJlOGIxIiwiY2xpZW50X25hbWUiOiJ0dm0wMW9hY25ldyIsInRlbmFudCI6ImlkY3MtOWI2ZGIyOGYwZmQ4NDkwN2FkNmU5ZDA5OTgwZjQ3MDMiLCJqdGkiOiJlOGE3NjgzMTc5MGY0NTBmOGM0YWI5NmMzYTBlZTcyYyIsImd0cCI6InJvIiwidXNlcl9kaXNwbGF5bmFtZSI6IlNhcmF0aCBDaGFuZHJhbiIsIm9wYyI6ZmFsc2UsInN1Yl9tYXBwaW5nYXR0ciI6InVzZXJOYW1lIiwicHJpbVRlbmFudCI6dHJ1ZSwidG9rX3R5cGUiOiJBVCIsImNhX2d1aWQiOiJjYWNjdC1lZmJjYWY0ZDc0MDU0YzFhOTA3NDliZTc4NGExN2ZmMCIsImF1ZCI6WyJodHRwczpcL1wvdHZtMDFvYWNuZXctb2ZzY2Rldi1pYS5hbmFseXRpY3Mub2NwLm9yYWNsZWNsb3VkLmNvbSIsImh0dHBzOlwvXC9kNmxuenBuaGM0azZjZ3h6c3E2bHZ5YWVocW1sYnJtYS5hbmFseXRpY3Mub2NwLm9yYWNsZWNsb3VkLmNvbSJdLCJ1c2VyX2lkIjoiNzQwM2E1OTkyNGYxNDE4YmFjMTJiNGU4ODZjM2ZhY2IiLCJkb21haW4iOiJpZGVudGl0eSIsInRlbmFudF9pc3MiOiJodHRwczpcL1wvaWRjcy05YjZkYjI4ZjBmZDg0OTA3YWQ2ZTlkMDk5ODBmNDcwMy5pZGVudGl0eS5vcmFjbGVjbG91ZC5jb20iLCJyZXNvdXJjZV9hcHBfaWQiOiI4ZDQ0ZTM0YWQ4YmU0MTIyYTViOWUyNjk5Y2RmNzY4MiJ9.Z24hT-d2gKoh1r0FwAKBKbZqB6JEOk0AWXdQYguFyt3cSg0Z352DrGHKH7lDPIqqzD1EEdu58L4A4Zg1fjg3lS0lMugihSG4whyrFnE1Dxtghpy1M-rV7Y_SD9nMv_0CDfMfbKOjOVcGrfvmy9pZqdGxM8ip8E7e4Mh_rRTEkT_dzmJXNpWthRXztJA1ozgF4LDZd0SRqXD7W32gR79me7J7GARgXdB_hReKUqLMzvGrnC6sYJ-NLHkXjlIaJtT2lwiUYIl4MKMeaXIRCmN9Amga9jMWt0G-mOLO6IonhGg8YTLFPcWyz2aek39Do2ZE4tucchZuTPvkIQfj5gSgSg";
+      requirejs(
+        ["jquery", "knockout", "obitech-application/application"],
+        function ($, ko, application) {
+          application.setSecurityConfig("token", {
+            tokenAuthFunction: function () {
+              return idcs_token;
+            },
+          });
+          ko.applyBindings();
+        }
+      );
+    </script>
+  </body>
+</html>
